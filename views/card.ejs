@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Data</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css" />
+  </head>
+  <body>
+    <div class="row m-0">
+      <div class="col-12">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">DOB</th>
+              <th scope="col">Mob</th>
+              <th scope="col">PanCode</th>
+              <th scope="col">PanNumber</th>
+              <th scope="col">Nationality</th>
+            </tr>
+          </thead>
+          <tbody>
+            <%cardData.forEach((data)=>{%>
+            <tr>
+              <th scope="row"><%=data.name%></th>
+              <td><%=data.namelast%></td>
+              <td><%=data.email%></td>
+              <td><%=data.dob%></td>
+              <td><%=data.mobile%></td>
+              <td><%=data.pin%></td>
+              <td><%=data.pan%></td>
+              <td><%=data.Nationality%></td>
+            </tr>
+            <%})%>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

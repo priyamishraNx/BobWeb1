@@ -1,0 +1,1008 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0083)https://www.snapdeal.com/iframeLogin#https://www.snapdeal.com/offers/bob-card-apply -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="./userAuth.min.css" rel="stylesheet" type="text/css">
+    <style>
+    	#signin_box{
+    		background: none!important;
+    	}
+    	.ie8 #signin_box{
+    		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#00FFFFFF', EndColorStr='#00FFFFFF') !important";
+    	}
+    	body{
+    		background: transparent;
+    	}
+    	.ghost-input{
+			display: none!important;
+		    height: 0!important;
+		    padding: 0!important;
+		    border:none!important;
+		}
+    </style>
+    <!--[if lte IE 10]>
+		<script type="text/javascript" src="https://i4.sdlcdn.com/js/1639746993560/snap/lteie9.min.js"></script>
+	<![endif]-->
+    </head><body marginwidth="0" marginheight="0" class="signinBody"><input type="hidden" id="webPasswordMessage" value="Password should have a minimum of 6 characters, at least 1 numeric and 1 alphabet">
+<input type="hidden" value="utm_source,utm_medium,utm_campaign,utm_term,utm_content" id="dpUrlParams">
+<input type="hidden" value="utmSource,utmMedium,utmCampaign,utmTerm,utmContent" id="dpUrlParamsKeys">
+<input type="hidden" value="true" id="loadWebPImage">
+<input type="hidden" value="4000" id="cartToastTimeoutMili">
+
+<input type="hidden" value="true" id="dpWidgetLoggingSwitch">
+<input type="hidden" value="1500" id="dpWidgetLoggingInterval">
+
+
+<input type="hidden" value="60000" id="dpWidgetClearWait">
+
+
+<input type="hidden" value="true" id="verticalSearchSwitch">
+
+<input type="hidden" value="false" id="shoppingListSwitch">
+<input type="hidden" value="Daily Needs" id="shoppingListCatLeftnav">
+<input type="hidden" value="3" id="maxFMCGQuantity">
+<script>
+	
+	var fbPixelLogging = 'true';
+	var googlePixelLogging = 'true';
+	var lazyLoadHeight = '350';
+	var jsLoggingEnabled = 'false';
+	var jsLoggingApi = '';
+	var dotBrandingFlag = 'true';
+	var webPincodeExperimentIsActive = 'false';
+	var webPincodeExperimentType = 'off';
+	var pincodeSalienceDelay = '1';
+	var webPincodeSalienceJourneyTime = '360';
+	var dotGlobalFlag = 'true';
+	var signupWithMobile = 'true';
+	var dotWebCheckoutDiffer = 'true';
+    var matrixUser = 'false';
+    var startTime = new Date().getTime(); 
+    var loadingTime = 0; var env = 'prod';
+    var staticRes = '';
+    var ajaxRes = '';
+    var httpPath = 'https://www.snapdeal.com';
+    var olarkId = '9095-842-10-8018';
+    var absoluteHttpPath = 'https://www.snapdeal.com';
+    var absoluteHttpsPath = 'https://www.snapdeal.com:443';
+    var pureHttpPath = 'https://www.snapdeal.com:443';
+    if (typeof Snapdeal == 'undefined') {Snapdeal = {};}; 
+    var https='443';
+    window.sdHttpPath = 'https://www.snapdeal.com';
+    var abVersion=1;
+    var abEnabled=true;
+    var abExpireDay=1;
+    var serverName='buyerfront-web-8002';
+    var fbPermissions='user_birthday,user_hometown,email,user_location,user_likes';
+    var fbFields='birthday,hometown,email,location,likes';
+    var fbAuthRequest='&auth_type=rerequest';
+    var fbAppId="689277371113314";
+    var googleAppId="36115742491-h38grsuuq7jilk484i69j84bmul8nst5.apps.googleusercontent.com";
+    var sdLoggerSwitch =  window.location.protocol === 'https:' ? 'true' == 'true' : 'true' == 'true' ;
+    var resendOtpDisableTime = parseInt("15");
+    resendOtpDisableTime = (resendOtpDisableTime > 0) ? resendOtpDisableTime : 0;
+    var globalConfigs = {
+    		
+    		"assetVersion" : "1639746993560"
+    		
+    	};
+    var omnitureRequestType = "POST";
+</script>
+
+<script type="text/javascript">
+	var showOnloadFlag = parseInt("0");
+	/**	0 : Don't Show ,1 : Show only to new users ,2 : Show to all not logged */
+	if(typeof Snapdeal == "undefined")
+		Snapdeal = {};
+	// Set the configuration here for signupwidget
+	Snapdeal.signupWidConfig = {
+		onloadShowOnlyIfNewUser : showOnloadFlag == 1 ,
+		onloadShow : showOnloadFlag != 0  ,
+		cookieName : "snapdeal" ,
+		cookieNameFirstTime : "firstTimeVisit" ,
+		
+			loggedIn : false , 
+		
+		forceManual : false ,
+		targetUrl : "/iframeLogin" ,
+		// Currently the code used in prod -- now used when no promo is sent
+		regMsgCode : 103 ,  
+		// Code when promo is sent on social signup
+		socialMsgCode : 1110 ,
+		// Code when promo is sent on normal signup
+		hasCouponMsgCode : 1112
+	};
+	// Google Ads related code -- required so that gpt.js can be lazy loaded
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+
+	// switches for various external components
+	Snapdeal = window.Snapdeal || {};
+	Snapdeal.componentSwitches = {};
+	Snapdeal.componentSwitches.searchClosed			= "false";
+	Snapdeal.componentSwitches.recSysClosed			= "true";
+	Snapdeal.componentSwitches.scoreClosed			= "false";
+	Snapdeal.componentSwitches.promoClosed			= "false";
+	Snapdeal.componentSwitches.cocofsClosed			= "false";
+	Snapdeal.componentSwitches.facebookClosed		= "false";
+	Snapdeal.componentSwitches.zendeskClosed 		= "false";
+	Snapdeal.componentSwitches.autoSuggestClosed 	= "false";
+	Snapdeal.componentSwitches.ebayClosed 			= "false";
+	
+	// switch for quick buy button
+	var disableQuickBuy = "false";
+	var isLocalizationEnabled = "";
+	var localizationHeaderState = "";
+	var selectedTab = ""
+	var activeProductTab = 	"";
+	var gpsf = false;
+	var partialSearch = '';
+	var openFlowFlag = 'true';
+	window.suggestmeyes_loaded = true;
+ </script>
+ <script>
+	window.uuidPath = "https://i1.sdlcdn.com/js/1639746993560/snap/uuidV4.min.js";
+</script><script>
+        var sdata = '679E5F3974D7972F46385C8257F0E5F3';
+        var signupTargetUrl = '';
+        var isIframe = true ;
+        var maxOtpLength = '4';
+    	var parentLoc = window.location.hash.split("#").join("");
+    	var loginInsteadTimer = '10000';
+    </script>
+    
+    <script type="text/javascript" src="./loginIframe.min.js.download"></script>
+
+    <script type="text/html" id="signupWidgetTmpl">
+        <div id="login-register-modal" class="userAuthIcons">
+	
+	<ul class="listAuthModal">
+		<li class="mngorder">
+			<i class="userAuthIcons"></i>
+			<h4>MANAGE YOUR ORDERS</h4>
+			<p>Track orders, manage cancellations & returns.</p>
+		</li>
+		<li class="shortlistitm">
+			<i class="userAuthIcons"></i>
+			<h4>SHORTLIST ITEMS YOU LOVE</h4>
+			<p>Keep items you love on a watchlist.</p>
+		</li>
+		<li class="offrupdate">
+			<i class="userAuthIcons"></i>
+			<h4>AWESOME OFFERS UPDATES FOR YOU</h4>
+			<p>Be first to know about great offers and save.</p>
+		</li>
+	</ul>
+	
+	<div class="userAuth-card">
+	
+		<div class="login-loader hidden">  
+           	<img src="https://i2.sdlcdn.com/img/sdDarwinLoader.svg" height="40" width="40"/>	    	
+	    </div>
+	    
+		<div class="authMsg authSuccess hidden aligncenter"></div>
+<div class="authMsg authError hidden aligncenter"></div><div class="rfloat closepopup" id="close-pop">
+			<i class="sd-icon sd-icon-delete-sign fnt-22" style="color: #cdcece;"></i>
+		</div>
+		<div class="secondary-cta hidden">
+			<p id="signup-message"></p> 
+			<a href="javascript:void(0);" id="login-instead">Continue to Login</a>
+		</div>
+		<div class="login-register-common">
+			<header>login/sign up on snapdeal</header>
+<p class="subHead marB20">Please provide your Mobile Number or Email to Login/ Sign Up on Snapdeal</p>
+<form id="commonView">	
+	<div class="number-prefix number-prefix-disable">
+			<span>+91</span>
+			<input class="col-xs-24" type="text" 
+				   placeholder="Mobile Number/ Email" 
+			   	   data-isMobileOnly="false" name="username" id="userName"/>
+		</div>
+	<input type="text" value="Fix IE bug" class="hidden ghost-input"/>
+	
+	<button class="btn col-xs-24 btn-large btn-skyblue continueBtn marT20 marB30" id="checkUser">continue</button>
+</form><div class="loginSocialBtn col-xs-24 reset-padding marT20 marB20">
+	<div class="commonTextGrey aligncenter">or Login Using </div>
+	<div class="social-button gmLogin rfloat col-xs-11" id="googleUserLogin" style="width:100%">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48" class="social-icon">
+			<g>
+				<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+				<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+				<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+				<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+				<path fill="none" d="M0 0h48v48H0z"></path>
+			</g>
+		</svg>
+		<span class="social-content">Google</span> 
+	</div>
+	<!-- <div class="fbLogin col-xs-12" id="fbUserLogin"><i class="userAuthIcons"></i>facebook</div>
+	<div class="gmLogin rfloat col-xs-11" id="googleUserLogin"><i class="userAuthIcons"></i>google</div> -->
+</div></div>
+		
+		<div class="login-card">
+			<div class="screen1 hidden">
+	<header>Login on snapdeal</header>
+	<p class="subHead marB20">Welcome Back!</p>
+	<form id="loginUR">
+		<div style="position:relative;">
+			<input type="text" class="input-icon-padding" name="j_username" id="j_username_ur" readonly/>
+			<i class="sd-icon sd-icon-edit edit-icon" data-screen="loginUr"></i>
+		</div>
+		
+		<div class="number-prefix">
+			<span>+91</span>
+			<input type="text" id="upgrade-mobile-number" placeholder="Mobile Number" maxlength="10" name="mobilenumber"/>
+		</div>   
+		<input type="text" placeholder="Name" name="name" id="name_ur" />
+		<input type="password" placeholder="Password" name="j_password" id="j_password_login_ur" class="input-icon-padding"/>
+		<div class="loginCheckbox keepLoginUR lfloat">
+		   <input id="keepLoginUR" type="checkbox" checked />
+		   <label for="keepLoginUR">
+		       <span > Keep me logged in </span>
+		   </label>
+		 </div>
+		 <i class="togglePwdIcon userAuthIcons iconEyeShow  iconEyeHide" data-pass="j_password_login_ur" data-screen="loginUr"></i>
+		<a href="javascript:void(0);" id="forgotPass">Forgot Password ?</a>
+		<input type="hidden" value="on" name="_spring_security_remember_me" />
+        <input type="hidden" value="true" name="ajax" />
+        <input type="hidden" value="" name="j_otp" id="j_otp_ur">
+		<input type="hidden" value="false" name="j_mobile" id="j_mobile_ur"/>
+		<input type="hidden" value="" name="j_otpId" id="j_otpId_ur"/>
+		
+		<button class="continueBtn btn col-xs-24 btn-large btn-skyblue marT20" id="submitLoginUR">Login</button>
+	</form>
+	<div class="tnc-signup clearfix">
+		By continuing, I agree to 
+		<a class="tnc-a" href="/page/terms-of-use" target="_blank">Terms &amp; Conditions</a>
+	</div>
+	<div class="loginSocialBtn col-xs-24 reset-padding marT20 marB20">
+	<div class="commonTextGrey aligncenter">or Login Using </div>
+	<div class="social-button gmLogin rfloat col-xs-11" id="googleUserLogin" style="width:100%">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48" class="social-icon">
+			<g>
+				<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+				<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+				<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+				<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+				<path fill="none" d="M0 0h48v48H0z"></path>
+			</g>
+		</svg>
+		<span class="social-content">Google</span> 
+	</div>
+	<!-- <div class="fbLogin col-xs-12" id="fbUserLogin"><i class="userAuthIcons"></i>facebook</div>
+	<div class="gmLogin rfloat col-xs-11" id="googleUserLogin"><i class="userAuthIcons"></i>google</div> -->
+</div></div>
+
+<div class="screen2 hidden">
+	<header>Verify Mobile</header>
+	<i class="userAuthIcons otpIcon"></i>
+	<p class="fnt-12 txt-center color-slate">Please enter verification code (OTP) sent to:</p>
+	<div class="verifyText mob fnt-12 txt-center color-slate" id="verifyMobileUR"></div>
+	<form id="loginOtpUR">
+		<div class="txt-center">
+			<input class="otpValueCode" type="text" placeholder="Code" name="otpValue" autocomplete="off" maxlength="4"/>
+		</div>
+		<input type="text" value="Fix IE bug" class="hidden ghost-input"/>
+		<div class="blue-color txt-center marT5">
+			<a href="javascript:void(0);" class="resendOTP" id="resendOtpUR" data-user="mobile">Resend OTP</a>
+			<a href="javascript:void(0);" class="onCall callMeLink" id="callMeUR">OTP on Call</a>
+			<span class="timer callTimer onCall"></span>
+		</div>
+		<button class="continueBtn btn col-xs-24 btn-large btn-skyblue marT20 marB20" id="upgradeUser">continue</button>
+	</form>
+	
+	</div> 
+</div>
+		
+		<div class="loginEmailUpgrade-card">		
+			<div class="screen1 hidden">
+	<header>Login on snapdeal</header>
+	<p class="subHead marB20">Welcome Back!</p>
+	<form id="loginUC">
+		<div class="number-prefix">
+			<span>+91</span>
+			<input type="text" name="j_username" class="input-icon-padding" id="j_username_uc" readonly/>
+			<i class="sd-icon sd-icon-edit edit-icon" data-screen="loginUc"></i>
+		</div>
+
+		<input type="password" placeholder="Password" name="j_password" id="j_password_login_uc" class="input-icon-padding"/>
+		<i class="togglePwdIcon userAuthIcons iconEyeShow  iconEyeHide" data-pass="j_password_login_uc" data-screen="loginUc"></i>
+		
+		<input type="hidden" value="on" name="_spring_security_remember_me" />
+        <input type="hidden" value="true" name="ajax" />
+        <input type="hidden" value="" name="webTargetUrl" id="targetUrlUC"/>
+        <input type="hidden" value="" name="j_otp" id="j_otp_uc">
+		<input type="hidden" value="false" name="j_mobile" id="j_mobile_uc"/>
+		<input type="hidden" value="" name="j_otpId" id="j_otpId_uc"/>
+		<div class="loginCheckbox keepLoginUC">  
+		   <input id="keepLoginUC" type="checkbox" checked />
+		   <label for="keepLoginUC">
+		       <span > Keep me logged in</span>
+		   </label>
+		 </div>
+		 <button class="continueBtn btn col-xs-24 btn-large btn-skyblue marT20" id="submitLoginUC">Login</button>
+		<button type="button" class="continueBtn btn col-xs-24 btn-large btn-line-skyblue marT20" id="sendOtpUC">Login Without Password</button>
+	</form>
+	<div class="loginSocialBtn col-xs-24 reset-padding marT20 marB20">
+	<div class="commonTextGrey aligncenter">or Login Using </div>
+	<div class="social-button gmLogin rfloat col-xs-11" id="googleUserLogin" style="width:100%">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48" class="social-icon">
+			<g>
+				<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+				<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+				<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+				<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+				<path fill="none" d="M0 0h48v48H0z"></path>
+			</g>
+		</svg>
+		<span class="social-content">Google</span> 
+	</div>
+	<!-- <div class="fbLogin col-xs-12" id="fbUserLogin"><i class="userAuthIcons"></i>facebook</div>
+	<div class="gmLogin rfloat col-xs-11" id="googleUserLogin"><i class="userAuthIcons"></i>google</div> -->
+</div></div>
+	
+<div class="screen2 hidden">
+	<header>Login on snapdeal</header>
+	<i class="userAuthIcons otpIcon"></i>
+	<p class="fnt-12 txt-center color-slate user-msg">Please enter verification code (OTP) sent to:</p>
+	<div class="verifyText mob fnt-12 txt-center color-slate" id="verifyMobileUC"></div>
+	<div class="verifyText email fnt-12 txt-center color-slate" id="verifyEmailUC"></div>
+	<form id="loginOtpUC">
+		<div class="txt-center">
+			<input class="otpValueCode" type="text" placeholder="Code" name="otpValue" autocomplete="off" maxlength="4"/>
+		</div>
+		<input type="text" value="Fix IE bug" class="hidden ghost-input"/>
+		<div class="blue-color txt-center marT5">
+			<a href="javascript:void(0);" class="resendOTP" id="resendOtpUC" data-user="userName">Resend OTP</a>
+			<a href="javascript:void(0);" class="onCall callMeLink" id="callMeUC">OTP on Call</a>
+			<span class="timer callTimer onCall"></span>
+		</div>
+		<button class="continueBtn btn col-xs-24 btn-large btn-skyblue marT20 marB20" id="loginUsingOtp">continue</button>
+	</form>
+	
+	</div> 
+</div>
+		
+		<div class="forgot-password">
+			<div class="screen1 hidden">
+	<header>Forgot Password</header>
+	<i class="userAuthIcons otpIcon"></i>
+	<p class="fnt-12 txt-center color-slate">Please enter verification code (OTP) sent to:</p>
+	<div class="verifyText email fnt-12 txt-center color-slate" id="verifyEmailForgot"></div>
+	<form id="forgotOtp">
+		<div class="txt-center">
+			<input class="otpValueCode" type="text" placeholder="Code" name="otpValue" autocomplete="off" maxlength="4"/>
+		</div>
+		<input type="text" value="Fix IE bug" class="hidden ghost-input"/>
+		
+		<div class="blue-color txt-center marT5">
+			<a href="javascript:void(0);" class="resendOTP" id="resendOtpForgot" data-user="userName">Resend OTP</a>
+		</div>
+		<button class="continueBtn btn col-xs-24 btn-large btn-skyblue marT20 marB20" id="forgotUsingOtp">continue</button>
+	</form>
+	
+	</div>
+
+<div class="screen2 hidden">
+	<header>Reset Password</header>
+	<form id="resetPassword">
+		<input type="password" placeholder="Password" name="reset_password" id="reset_password" class="input-icon-padding"/>
+		<i class="togglePwdIcon userAuthIcons iconEyeShow  iconEyeHide" data-pass="reset_password"></i>
+		<input type="text" value="Fix IE bug" class="hidden ghost-input"/>
+		<p class="password-message">Password should have a minimum of 6 characters, at least 1 numeric and 1 alphabet</p>
+		<button class="continueBtn btn col-xs-24 btn-large btn-skyblue marT20" id="submitForgotPassword">Reset Password</button>
+	</form>
+	</div> 
+</div>
+		
+		<div class="signup-card">
+			<div class="screen1 hidden">
+	<header>Sign Up</header>
+	<p class="subHead marB20">Create an account on Snapdeal</p>
+	<form id="userSignupForm">
+		<div id="usernameTemplate"></div>
+		<div id="j_name_placeholder"></div>
+		<div id="userDobTemplate"></div>		
+		<input type="password" id="j_password" name="j_password" placeholder="Password" class="input-icon-padding">
+		<i class="togglePwdIcon userAuthIcons iconEyeShow  iconEyeHide" data-pass="j_password" data-screen="register"></i>
+		
+		<input type="hidden" id="j_confpassword" name="j_confpassword">
+				
+		<input type="hidden" id="CSRFToken" name="CSRFToken" value="">
+        <input type="hidden" id="targetUrl" name="targetUrl" value="">
+        <input type="hidden" id="mobileStart" name="mobileStart" value="">
+        <input type="hidden" id="numberEdit" name="numberEdit" value="false">
+		
+		<input type="hidden" id="socialid" name="socialid" value=""/>
+        <input type="hidden" id="gender" name="gender" value=""/>
+        <input type="hidden" id="j_displayname" name="j_displayname" value=""/>
+        <input type="hidden" id="language" name="language" value=""/>
+        <input type="hidden" id="source" name="source" value=""/>
+		<input type="hidden" id="lastname" name="lastname" value=""/>
+        <input type="hidden" id="firstname" name="firstname" value=""/>
+
+		<p class="password-message">Password should have a minimum of 6 characters, at least 1 numeric and 1 alphabet</p>
+		<div class="loginCheckbox keepLoginSignUp">
+		   <input id="keepLoginSignUp" type="checkbox" checked />
+		   <label for="keepLoginSignUp">
+		       <span > Keep me logged in </span>
+		   </label>
+		 </div>
+		 <button class="continueBtn btn col-xs-24 btn-large btn-skyblue marT20" id="userSignup">continue</button>
+	</form>
+	
+	<div class="tnc-signup clearfix">
+		By registering, I agree to 
+		<a class="tnc-a" href="/page/terms-of-use" target="_blank">Terms &amp; Conditions</a>
+	</div>
+	<div class="loginSocialBtn col-xs-24 reset-padding marT20 marB20">
+	<div class="commonTextGrey aligncenter">or Login Using </div>
+	<div class="social-button gmLogin rfloat col-xs-11" id="googleUserLogin" style="width:100%">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48" class="social-icon">
+			<g>
+				<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+				<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+				<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+				<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+				<path fill="none" d="M0 0h48v48H0z"></path>
+			</g>
+		</svg>
+		<span class="social-content">Google</span> 
+	</div>
+	<!-- <div class="fbLogin col-xs-12" id="fbUserLogin"><i class="userAuthIcons"></i>facebook</div>
+	<div class="gmLogin rfloat col-xs-11" id="googleUserLogin"><i class="userAuthIcons"></i>google</div> -->
+</div></div>
+
+<div class="screen2 hidden">
+	<header>Sign Up on snapdeal</header>
+	<i class="userAuthIcons otpIcon"></i>
+	<p class="fnt-12 txt-center color-slate">Please enter verification code (OTP) sent to:</p>
+	<div class="number-prefix dotted-input blue-color">
+		<span>+91</span>
+		<input type="text" class="verifyInput" maxlength="10" readonly/>
+		<label class="error dotted-error">Please enter valid mobile number</label>
+		<div class="verifyInputEdit">
+			<i class="sd-icon sd-icon-edit"></i>Edit
+		</div>
+		<div class="verifyInputSend hidden">Done</div>
+	</div>	
+	<form id="registerOtp">
+		<div class="txt-center">
+			<input class="otpValueCode" type="text" placeholder="Code" name="otpValue" autocomplete="off" maxlength="4"/>
+		</div>
+		<input type="text" value="Fix IE bug" class="hidden ghost-input"/>
+		<div class="blue-color txt-center marT5">
+			<a href="javascript:void(0);" class="resendOTP" id="resendOtpRegister" data-user="mobile">Resend OTP</a>
+			<a href="javascript:void(0);" class="onCall callMeLink" id="callMeRegister">OTP on Call</a>
+			<span class="timer callTimer onCall"></span>
+		</div>
+		<button class="continueBtn btn col-xs-24 btn-large btn-skyblue marT20 marB20" id="registerUser">continue</button>
+	</form>
+	</div>
+
+<script type="text/html" id="mobileJourney">
+	<div class="number-prefix">
+		<span>+91</span>
+		<input type="text" id="j_number" maxlength="10" name="j_number" placeholder="Mobile Number"/>
+		<i class="sd-icon sd-icon-edit edit-icon" data-screen="register"></i>
+	</div>
+	<div id="j_username_new_placeholder"></div>		
+</script>
+
+<script type="text/html" id="emailJourney">
+	<div id="j_username_new_placeholder"></div>	
+	<i class="sd-icon sd-icon-edit edit-icon" data-screen="register"></i>
+	<div class="number-prefix">
+		<span>+91</span>
+		<input type="text" id="j_number" maxlength="10" name="j_number" placeholder="Mobile Number"/>
+	</div>
+</script>
+
+<script type="text/html" id="userDob">
+	<div class="dob-ct">
+		<span class="label">DOB</span>
+		<input type="text" id="j_dob" maxlength="10" name="j_dob" placeholder="25/11/1990" value="" data-date-end-date="-1d"/>
+		<input type="hidden" id="j_dob_default" value="true"/>
+		<input type="hidden" id="j_dob_min18y" value="true"/>
+	</div>
+</script>
+		
+	
+
+ 
+    <script type="text/javascript">
+    function showWidget(){
+        window.widget = new Snapdeal.signupWidget();
+        window.widget.init();
+        signinBox=$("#signin_box");
+        signinBox.show();
+        signinBox.html(window.widget.getHtml());
+        XD.postMessage("iframeLoaded",parentLoc);
+    }
+    $(document).ready(function(){
+
+        showWidget();
+        $("#signin_box").on("click",'.closepopup',function(){
+            closepopupInitiate();
+            getOmnitureScript({}, "closeLoginModal");
+        });
+
+        $('#signin_box').on('click','.fbIcon', function(){
+            Snapdeal.Cookie.set('sdfblogin', 'yes', 365);
+        });
+    });
+
+    function closepopupInitiate() {
+        XD.postMessage("close",parentLoc);
+    }
+
+    function resetAllForms(){
+    	$('.userAuth-card .login-register-common,.userAuth-card .screen1,.userAuth-card .screen2,.authMsg,.verifyText,.secondary-cta,#mobileJourney,#emailJourney').addClass('hidden');
+    	$("#login-register-modal form").resetForm();
+    	$("#login-register-modal form").clearForm();
+    	$('#usernameTemplate').html('');
+   		$('.userAuth-card .login-register-common').removeClass('hidden');
+   		$("label.error").hide();
+   		$('#numberEdit').val(false);
+   		$('#login-instead').text('Continue to Login');
+   		$('#registerOtp input, #registerOtp button').removeAttr('disabled');
+		$('#resendOtpRegister, #callMeRegister, .resendOTP').removeClass('disable-partial');
+        $(".error").removeClass("error");
+        if($("#userName").attr('data-isMobileOnly') !== 'true'){
+        	$("#userName").parent().addClass('number-prefix-disable');
+        }
+    }
+
+    XD.receiveMessage(function(msg){
+        if(msg.data == "dflt" ){
+            showWidget(data, msg.data);
+        };
+    });
+
+
+    XD.receiveMessage(function(msg){
+        if(msg.data == 'loginClicked'){
+        	resetAllForms();
+        	getOmnitureScript({ 
+            	emailOnLogin: 'true',
+            	showPassword: 'false'
+            }, "loginModalFlag" );
+        }
+        else if(msg.data == 'registerClicked'){
+        	resetAllForms();
+        	getOmnitureScript({ 
+            	emailOnLogin: 'true',
+            	showPassword: 'false'
+            }, "loginModalFlag" );
+        }
+        else if(msg.data == 'closePopup'){
+        	resetAllForms();
+        }
+        else if(msg.data == 'closePopupByEsc'){
+            closepopupInitiate();
+        }
+    });
+    
+    $(document).on("keyup",function(e){
+	    if(e.keyCode === 27) 
+	    	XD.postMessage("close",parentLoc);
+    });
+	
+    if(!$('html').hasClass('ie8')){
+    	$(document).on('click', function(event) {
+        	if(event.target.parentNode !== null && $(event.target).parents('#signin_box').length == 0 && !$(event.target).hasClass('edit-icon')){
+        		XD.postMessage("close",parentLoc);
+        	}
+        });    	
+    }
+
+    </script>
+     <script>
+			var dpUrlParams = document.getElementById("dpUrlParams") ? document.getElementById("dpUrlParams").value : '';
+			var dpUrlParamsKeys = document.getElementById("dpUrlParamsKeys") ? document.getElementById("dpUrlParamsKeys").value : '';
+			var SDLoggerConfig = {
+				domain 				: 'snapdeal',
+				fullDomain  		: 'www.snapdeal.com',
+				extension 			: '.com',
+				version 			: window["globalConfigs"] ? globalConfigs.assetVersion : '',
+				orgId 				: '1001_1',
+				appType 			: 'WEB',
+				debug 				: false,
+				utmParams 			: dpUrlParams ? dpUrlParams.split(',') : [],
+				utmParamsEventData	: dpUrlParamsKeys ? dpUrlParamsKeys.split(',') : [],//To be used in sending track data, must have corrosponding key in 'utmParams' 
+				queryHID 			: 'HID',
+				queryMID  			: 'MID',
+				cookies 			: { user_email: 'eid', logged_in: 'lu', cookie_id: 'u', utm_params: 'vt', sd_utm_str: '_sdlogger_utm', ab_test: 'alps', locale: 'loc', pincode: 'spin' },
+				endpoint 			: 'https://log.snapdeal.com/eventData',
+				expiryTimes			: {utmCookie: 1/(24*2), sdUTMStr: 1/(24*2),refPage: 1/(24*2), refEvent: 1/(24*60)},
+				persistUTM			: true,
+				isLogin				: true
+			};
+			if( window.sdLoggerSwitch && SDLogger && typeof SDLogger.init === 'function' ){
+				SDLogger.init(SDLoggerConfig);	
+			}
+			</script>
+    <script>
+function httpRequest(url, method, callback, isSync, data, timeout){
+    var xmlHttp = new XMLHttpRequest();
+    try {
+        xmlHttp = new XMLHttpRequest;
+    } catch (e) {
+        var msxml = ['MSXML2.XMLHTTP.3.0', 'MSXML2.XMLHTTP', 'Microsoft.XMLHTTP'];
+        for (var i = 0, len = msxml.length; i < len; ++i) {
+            try {
+                xmlHttp = new ActiveXObject(msxml[i]);
+                break;
+            } catch (e) {}
+        }
+    }
+    
+    if(!!timeout && !isSync){
+        if (typeof xmlHttp.timeout === "number") {
+            xmlHttp.timeout = timeout;
+        } else {
+            setTimeout(function () {
+                if (xmlHttp.abort) {
+                    xmlHttp.abort();
+                }
+            }, timeout);
+        }
+        xmlHttp.ontimeout = function(){
+            if (xmlHttp.abort) {
+                xmlHttp.abort();
+            }
+        }
+    }
+    
+    xmlHttp.open(method, url, isSync ? false : true);
+    
+    xmlHttp.setRequestHeader("Content-type", "application/json");
+    
+    if(!!data){
+        xmlHttp.send(data || null);        
+    }
+    
+    xmlHttp.onreadystatechange = function() { 
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            callback(xmlHttp.responseText);
+    }
+}
+</script>
+
+
+
+
+	<div id="signin_box" class="iframeSignin">
+        <div id="login-register-modal" class="userAuthIcons">
+	
+	<ul class="listAuthModal">
+		<li class="mngorder">
+			<i class="userAuthIcons"></i>
+			<h4>MANAGE YOUR ORDERS</h4>
+			<p>Track orders, manage cancellations &amp; returns.</p>
+		</li>
+		<li class="shortlistitm">
+			<i class="userAuthIcons"></i>
+			<h4>SHORTLIST ITEMS YOU LOVE</h4>
+			<p>Keep items you love on a watchlist.</p>
+		</li>
+		<li class="offrupdate">
+			<i class="userAuthIcons"></i>
+			<h4>AWESOME OFFERS UPDATES FOR YOU</h4>
+			<p>Be first to know about great offers and save.</p>
+		</li>
+	</ul>
+	
+	<div class="userAuth-card">
+	
+		<div class="login-loader hidden">  
+           	<img src="./sdDarwinLoader.svg" height="40" width="40">	    	
+	    </div>
+	    
+		<div class="authMsg authSuccess hidden aligncenter"></div>
+<div class="authMsg authError hidden aligncenter"></div><div class="rfloat closepopup" id="close-pop">
+			<i class="sd-icon sd-icon-delete-sign fnt-22" style="color: #cdcece;"></i>
+		</div>
+		<div class="secondary-cta hidden">
+			<p id="signup-message"></p> 
+			<a href="javascript:void(0);" id="login-instead">Continue to Login</a>
+		</div>
+		<div class="login-register-common">
+			<header>login/sign up on snapdeal</header>
+<p class="subHead marB20">Please provide your Mobile Number or Email to Login/ Sign Up on Snapdeal</p>
+<form id="commonView">	
+	<div class="number-prefix number-prefix-disable">
+			<span>+91</span>
+			<input class="col-xs-24" type="text" placeholder="Mobile Number/ Email" data-ismobileonly="false" name="username" id="userName">
+		</div>
+	<input type="text" value="Fix IE bug" class="hidden ghost-input">
+	
+	<button class="btn col-xs-24 btn-large btn-skyblue continueBtn marT20 marB30" id="checkUser">continue</button>
+</form><div class="loginSocialBtn col-xs-24 reset-padding marT20 marB20">
+	<div class="commonTextGrey aligncenter">or Login Using </div>
+	<div class="social-button gmLogin rfloat col-xs-11" id="googleUserLogin" style="width:100%">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48" class="social-icon">
+			<g>
+				<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+				<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+				<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+				<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+				<path fill="none" d="M0 0h48v48H0z"></path>
+			</g>
+		</svg>
+		<span class="social-content">Google</span> 
+	</div>
+	<!-- <div class="fbLogin col-xs-12" id="fbUserLogin"><i class="userAuthIcons"></i>facebook</div>
+	<div class="gmLogin rfloat col-xs-11" id="googleUserLogin"><i class="userAuthIcons"></i>google</div> -->
+</div></div>
+		
+		<div class="login-card">
+			<div class="screen1 hidden">
+	<header>Login on snapdeal</header>
+	<p class="subHead marB20">Welcome Back!</p>
+	<form id="loginUR">
+		<div style="position:relative;">
+			<input type="text" class="input-icon-padding" name="j_username" id="j_username_ur" readonly="">
+			<i class="sd-icon sd-icon-edit edit-icon" data-screen="loginUr"></i>
+		</div>
+		
+		<div class="number-prefix">
+			<span>+91</span>
+			<input type="text" id="upgrade-mobile-number" placeholder="Mobile Number" maxlength="10" name="mobilenumber">
+		</div>   
+		<input type="text" placeholder="Name" name="name" id="name_ur">
+		<input type="password" placeholder="Password" name="j_password" id="j_password_login_ur" class="input-icon-padding">
+		<div class="loginCheckbox keepLoginUR lfloat">
+		   <input id="keepLoginUR" type="checkbox" checked="">
+		   <label for="keepLoginUR">
+		       <span> Keep me logged in </span>
+		   </label>
+		 </div>
+		 <i class="togglePwdIcon userAuthIcons iconEyeShow  iconEyeHide" data-pass="j_password_login_ur" data-screen="loginUr"></i>
+		<a href="javascript:void(0);" id="forgotPass">Forgot Password ?</a>
+		<input type="hidden" value="on" name="_spring_security_remember_me">
+        <input type="hidden" value="true" name="ajax">
+        <input type="hidden" value="" name="j_otp" id="j_otp_ur">
+		<input type="hidden" value="false" name="j_mobile" id="j_mobile_ur">
+		<input type="hidden" value="" name="j_otpId" id="j_otpId_ur">
+		
+		<button class="continueBtn btn col-xs-24 btn-large btn-skyblue marT20" id="submitLoginUR">Login</button>
+	</form>
+	<div class="tnc-signup clearfix">
+		By continuing, I agree to 
+		<a class="tnc-a" href="https://www.snapdeal.com/page/terms-of-use" target="_blank">Terms &amp; Conditions</a>
+	</div>
+	<div class="loginSocialBtn col-xs-24 reset-padding marT20 marB20">
+	<div class="commonTextGrey aligncenter">or Login Using </div>
+	<div class="social-button gmLogin rfloat col-xs-11" id="googleUserLogin" style="width:100%">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48" class="social-icon">
+			<g>
+				<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+				<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+				<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+				<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+				<path fill="none" d="M0 0h48v48H0z"></path>
+			</g>
+		</svg>
+		<span class="social-content">Google</span> 
+	</div>
+	<!-- <div class="fbLogin col-xs-12" id="fbUserLogin"><i class="userAuthIcons"></i>facebook</div>
+	<div class="gmLogin rfloat col-xs-11" id="googleUserLogin"><i class="userAuthIcons"></i>google</div> -->
+</div></div>
+
+<div class="screen2 hidden">
+	<header>Verify Mobile</header>
+	<i class="userAuthIcons otpIcon"></i>
+	<p class="fnt-12 txt-center color-slate">Please enter verification code (OTP) sent to:</p>
+	<div class="verifyText mob fnt-12 txt-center color-slate" id="verifyMobileUR"></div>
+	<form id="loginOtpUR">
+		<div class="txt-center">
+			<input class="otpValueCode" type="text" placeholder="Code" name="otpValue" autocomplete="off" maxlength="4">
+		</div>
+		<input type="text" value="Fix IE bug" class="hidden ghost-input">
+		<div class="blue-color txt-center marT5">
+			<a href="javascript:void(0);" class="resendOTP" id="resendOtpUR" data-user="mobile">Resend OTP</a>
+			<a href="javascript:void(0);" class="onCall callMeLink" id="callMeUR">OTP on Call</a>
+			<span class="timer callTimer onCall"></span>
+		</div>
+		<button class="continueBtn btn col-xs-24 btn-large btn-skyblue marT20 marB20" id="upgradeUser">continue</button>
+	</form>
+	
+	</div> 
+</div>
+		
+		<div class="loginEmailUpgrade-card">		
+			<div class="screen1 hidden">
+	<header>Login on snapdeal</header>
+	<p class="subHead marB20">Welcome Back!</p>
+	<form id="loginUC">
+		<div class="number-prefix">
+			<span>+91</span>
+			<input type="text" name="j_username" class="input-icon-padding" id="j_username_uc" readonly="">
+			<i class="sd-icon sd-icon-edit edit-icon" data-screen="loginUc"></i>
+		</div>
+
+		<input type="password" placeholder="Password" name="j_password" id="j_password_login_uc" class="input-icon-padding">
+		<i class="togglePwdIcon userAuthIcons iconEyeShow  iconEyeHide" data-pass="j_password_login_uc" data-screen="loginUc"></i>
+		
+		<input type="hidden" value="on" name="_spring_security_remember_me">
+        <input type="hidden" value="true" name="ajax">
+        <input type="hidden" value="" name="webTargetUrl" id="targetUrlUC">
+        <input type="hidden" value="" name="j_otp" id="j_otp_uc">
+		<input type="hidden" value="false" name="j_mobile" id="j_mobile_uc">
+		<input type="hidden" value="" name="j_otpId" id="j_otpId_uc">
+		<div class="loginCheckbox keepLoginUC">  
+		   <input id="keepLoginUC" type="checkbox" checked="">
+		   <label for="keepLoginUC">
+		       <span> Keep me logged in</span>
+		   </label>
+		 </div>
+		 <button class="continueBtn btn col-xs-24 btn-large btn-skyblue marT20" id="submitLoginUC">Login</button>
+		<button type="button" class="continueBtn btn col-xs-24 btn-large btn-line-skyblue marT20" id="sendOtpUC">Login Without Password</button>
+	</form>
+	<div class="loginSocialBtn col-xs-24 reset-padding marT20 marB20">
+	<div class="commonTextGrey aligncenter">or Login Using </div>
+	<div class="social-button gmLogin rfloat col-xs-11" id="googleUserLogin" style="width:100%">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48" class="social-icon">
+			<g>
+				<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+				<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+				<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+				<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+				<path fill="none" d="M0 0h48v48H0z"></path>
+			</g>
+		</svg>
+		<span class="social-content">Google</span> 
+	</div>
+	<!-- <div class="fbLogin col-xs-12" id="fbUserLogin"><i class="userAuthIcons"></i>facebook</div>
+	<div class="gmLogin rfloat col-xs-11" id="googleUserLogin"><i class="userAuthIcons"></i>google</div> -->
+</div></div>
+	
+<div class="screen2 hidden">
+	<header>Login on snapdeal</header>
+	<i class="userAuthIcons otpIcon"></i>
+	<p class="fnt-12 txt-center color-slate user-msg">Please enter verification code (OTP) sent to:</p>
+	<div class="verifyText mob fnt-12 txt-center color-slate" id="verifyMobileUC"></div>
+	<div class="verifyText email fnt-12 txt-center color-slate" id="verifyEmailUC"></div>
+	<form id="loginOtpUC">
+		<div class="txt-center">
+			<input class="otpValueCode" type="text" placeholder="Code" name="otpValue" autocomplete="off" maxlength="4">
+		</div>
+		<input type="text" value="Fix IE bug" class="hidden ghost-input">
+		<div class="blue-color txt-center marT5">
+			<a href="javascript:void(0);" class="resendOTP" id="resendOtpUC" data-user="userName">Resend OTP</a>
+			<a href="javascript:void(0);" class="onCall callMeLink" id="callMeUC">OTP on Call</a>
+			<span class="timer callTimer onCall"></span>
+		</div>
+		<button class="continueBtn btn col-xs-24 btn-large btn-skyblue marT20 marB20" id="loginUsingOtp">continue</button>
+	</form>
+	
+	</div> 
+</div>
+		
+		<div class="forgot-password">
+			<div class="screen1 hidden">
+	<header>Forgot Password</header>
+	<i class="userAuthIcons otpIcon"></i>
+	<p class="fnt-12 txt-center color-slate">Please enter verification code (OTP) sent to:</p>
+	<div class="verifyText email fnt-12 txt-center color-slate" id="verifyEmailForgot"></div>
+	<form id="forgotOtp">
+		<div class="txt-center">
+			<input class="otpValueCode" type="text" placeholder="Code" name="otpValue" autocomplete="off" maxlength="4">
+		</div>
+		<input type="text" value="Fix IE bug" class="hidden ghost-input">
+		
+		<div class="blue-color txt-center marT5">
+			<a href="javascript:void(0);" class="resendOTP" id="resendOtpForgot" data-user="userName">Resend OTP</a>
+		</div>
+		<button class="continueBtn btn col-xs-24 btn-large btn-skyblue marT20 marB20" id="forgotUsingOtp">continue</button>
+	</form>
+	
+	</div>
+
+<div class="screen2 hidden">
+	<header>Reset Password</header>
+	<form id="resetPassword">
+		<input type="password" placeholder="Password" name="reset_password" id="reset_password" class="input-icon-padding">
+		<i class="togglePwdIcon userAuthIcons iconEyeShow  iconEyeHide" data-pass="reset_password"></i>
+		<input type="text" value="Fix IE bug" class="hidden ghost-input">
+		<p class="password-message">Password should have a minimum of 6 characters, at least 1 numeric and 1 alphabet</p>
+		<button class="continueBtn btn col-xs-24 btn-large btn-skyblue marT20" id="submitForgotPassword">Reset Password</button>
+	</form>
+	</div> 
+</div>
+		
+		<div class="signup-card">
+			<div class="screen1 hidden">
+	<header>Sign Up</header>
+	<p class="subHead marB20">Create an account on Snapdeal</p>
+	<form id="userSignupForm">
+		<div id="usernameTemplate"></div>
+		<div id="j_name_placeholder"></div>
+		<div id="userDobTemplate"></div>		
+		<input type="password" id="j_password" name="j_password" placeholder="Password" class="input-icon-padding">
+		<i class="togglePwdIcon userAuthIcons iconEyeShow  iconEyeHide" data-pass="j_password" data-screen="register"></i>
+		
+		<input type="hidden" id="j_confpassword" name="j_confpassword">
+				
+		<input type="hidden" id="CSRFToken" name="CSRFToken" value="">
+        <input type="hidden" id="targetUrl" name="targetUrl" value="">
+        <input type="hidden" id="mobileStart" name="mobileStart" value="">
+        <input type="hidden" id="numberEdit" name="numberEdit" value="false">
+		
+		<input type="hidden" id="socialid" name="socialid" value="">
+        <input type="hidden" id="gender" name="gender" value="">
+        <input type="hidden" id="j_displayname" name="j_displayname" value="">
+        <input type="hidden" id="language" name="language" value="">
+        <input type="hidden" id="source" name="source" value="">
+		<input type="hidden" id="lastname" name="lastname" value="">
+        <input type="hidden" id="firstname" name="firstname" value="">
+
+		<p class="password-message">Password should have a minimum of 6 characters, at least 1 numeric and 1 alphabet</p>
+		<div class="loginCheckbox keepLoginSignUp">
+		   <input id="keepLoginSignUp" type="checkbox" checked="">
+		   <label for="keepLoginSignUp">
+		       <span> Keep me logged in </span>
+		   </label>
+		 </div>
+		 <button class="continueBtn btn col-xs-24 btn-large btn-skyblue marT20" id="userSignup">continue</button>
+	</form>
+	
+	<div class="tnc-signup clearfix">
+		By registering, I agree to 
+		<a class="tnc-a" href="https://www.snapdeal.com/page/terms-of-use" target="_blank">Terms &amp; Conditions</a>
+	</div>
+	<div class="loginSocialBtn col-xs-24 reset-padding marT20 marB20">
+	<div class="commonTextGrey aligncenter">or Login Using </div>
+	<div class="social-button gmLogin rfloat col-xs-11" id="googleUserLogin" style="width:100%">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48" class="social-icon">
+			<g>
+				<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+				<path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+				<path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+				<path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+				<path fill="none" d="M0 0h48v48H0z"></path>
+			</g>
+		</svg>
+		<span class="social-content">Google</span> 
+	</div>
+	<!-- <div class="fbLogin col-xs-12" id="fbUserLogin"><i class="userAuthIcons"></i>facebook</div>
+	<div class="gmLogin rfloat col-xs-11" id="googleUserLogin"><i class="userAuthIcons"></i>google</div> -->
+</div></div>
+
+<div class="screen2 hidden">
+	<header>Sign Up on snapdeal</header>
+	<i class="userAuthIcons otpIcon"></i>
+	<p class="fnt-12 txt-center color-slate">Please enter verification code (OTP) sent to:</p>
+	<div class="number-prefix dotted-input blue-color">
+		<span>+91</span>
+		<input type="text" class="verifyInput" maxlength="10" readonly="">
+		<label class="error dotted-error">Please enter valid mobile number</label>
+		<div class="verifyInputEdit">
+			<i class="sd-icon sd-icon-edit"></i>Edit
+		</div>
+		<div class="verifyInputSend hidden">Done</div>
+	</div>	
+	<form id="registerOtp">
+		<div class="txt-center">
+			<input class="otpValueCode" type="text" placeholder="Code" name="otpValue" autocomplete="off" maxlength="4">
+		</div>
+		<input type="text" value="Fix IE bug" class="hidden ghost-input">
+		<div class="blue-color txt-center marT5">
+			<a href="javascript:void(0);" class="resendOTP" id="resendOtpRegister" data-user="mobile">Resend OTP</a>
+			<a href="javascript:void(0);" class="onCall callMeLink" id="callMeRegister">OTP on Call</a>
+			<span class="timer callTimer onCall"></span>
+		</div>
+		<button class="continueBtn btn col-xs-24 btn-large btn-skyblue marT20 marB20" id="registerUser">continue</button>
+	</form>
+	</div>
+
+<script type="text/html" id="mobileJourney">
+	<div class="number-prefix">
+		<span>+91</span>
+		<input type="text" id="j_number" maxlength="10" name="j_number" placeholder="Mobile Number"/>
+		<i class="sd-icon sd-icon-edit edit-icon" data-screen="register"></i>
+	</div>
+	<div id="j_username_new_placeholder"></div>		
+</script></div></div></div></div>
+
+</body></html>
